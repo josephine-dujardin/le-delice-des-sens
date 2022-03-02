@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    background-color: #F6F6F6;
+    animation: pulse 5s;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+
+}
+
+.tamsayfaloadingcss {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+#tmsyfloadspin {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.tmsyfloaddoublboun1 {
+    background-color: #E972DA
+}
+
+.tmsyfloaddoublboun2 {
+    background-color: #A15ADC
+}
+
+.tmsyfloaddoublboun3 {
+    background-color: #99E1D1
+}
+
+.tmsyfloaddoublboun1, .tmsyfloaddoublboun2, .tmsyfloaddoublboun3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2s ease-in-out;
+    animation: sk-bounce 2s ease-in-out;
+}
+
+.tmsyfloaddoublboun2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s
+}
+
+.tmsyfloaddoublboun3 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0)
+    }
+
+    50% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0);
+        opacity: .6;
+        -webkit-transform: scale(0)
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: .6;
+        -webkit-transform: scale(1)
+    }
+
+}
+
+.nav {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+    align-items: center;
+}
+
+.nav>.nav-title>h1 {
+    display: flex;
+    font-size: 32px;
+    color: black;
+    font-family: 'Shrikhand', cursive;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+i.fas.fa-arrow-left {
+    font-size: 23px;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 24px;
+}
+
+.arrow-left {
+    color: black;
+}
+
+.img-restaurant {
+    width: 100%;
+}
+
+.restaurant {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    object-fit: cover;
+}
+
+.la-palette-du-gout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-top: -40px;
+    position: relative;
+    background-color: #F6F6F6;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.icon-heart .fas {
+    color: #636363;
+    font-size: 25px;
+    margin-left: 30px;
+    font-weight: 400;
+}
+
+.icon-heart .fas:hover {
+    background: linear-gradient(0.48turn, #E972DA, #A15ADC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.section-menu-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-menu {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu-entree h3 {
+    font-weight: lighter;
+    height: 15px;
+}
+
+.menu-entree {
+    margin-bottom: 30px;
+}
+
+.menu-plats h3 {
+    font-weight: lighter;
+    height: 15px;
+}
+
+.menu-plats {
+    margin-bottom: 30px;
+}
+
+.menu-desserts h3 {
+    font-weight: lighter;
+    height: 15px;
+}
+
+.menu-desserts {
+    margin-bottom: 30px;
+}
+
+hr.line {
+    border: 1.5px solid #99E1D1;
+    width: 40px;
+}
+
+.line {
+    margin-right: 100%;
+}
+
+.hr {
+    height: 5px;
+}
+
+.menu-sous-titre {
+    height: 10px;
+    font-weight: bolder;
+}
+
+.menu-texte {
+    position: relative;
+    font-weight: lighter;
+}
+
+.menu-prix {
+    font-weight: bolder;
+}
+
+.menu-flex {
+    display: flex;
+    justify-content: space-between;
+    line-height: 10px;
+}
+
+.menu-barre p {
+    color: black;
+}
+
+.menu-barre-1 {
+
+    animation: fadein 2s;
+    animation: slideup 2s;
+}
+
+@keyframes slideup {
+    from {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+
+}
+
+.menu-barre-2 {
+
+    animation: fadein 3s;
+    animation: slideup 2.5s;
+}
+
+@keyframes slideup {
+    from {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+
+}
+
+.menu-barre-3 {
+
+    animation: fadein 4s;
+    animation: slideup 3s;
+}
+
+@keyframes slideup {
+    from {
+        transform: translatey(20px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translatey(0px);
+        opacity: 100%;
+    }
+
+}
+
+.menu-barre-1 {
+    position: relative;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    line-height: 1;
+    height: 70px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    border-right: 0 solid #99E1D1;
+    transition: border-right 350ms ease-in-out, width 350ms ease-in-out;
+}
+
+.menu-barre-1:hover .check-circle {
+    color: white;
+    font-size: 25px;
+    transition: transform 750ms;
+}
+
+.menu-barre-1:hover .check-circle {
+    animation: fadein 1s;
+    transform: rotate(360deg);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.check-circle {
+    position: absolute;
+    right: -42px;
+    top: 22px;
+    font-size: 0px;
+    color: transparent;
+}
+
+.menu-barre-1:hover {
+    border-right: 60px solid #99E1D1;
+    width: 340px;
+}
+
+.menu-barre-2 {
+    position: relative;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    line-height: 1;
+    height: 70px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    border-right: 0 solid #99E1D1;
+    transition: border-right 350ms ease-in-out, width 350ms ease-in-out;
+}
+
+.menu-barre-2:hover .check-circle {
+    color: white;
+    font-size: 25px;
+    transition: transform 750ms;
+}
+
+.menu-barre-2:hover .check-circle {
+    animation: fadein 1s;
+    transform: rotate(360deg);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-barre-2:hover {
+    border-right: 60px solid #99E1D1;
+    width: 340px;
+}
+
+.menu-barre-3 {
+    position: relative;
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    line-height: 1;
+    height: 70px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    border-right: 0 solid #99E1D1;
+    transition: border-right 350ms ease-in-out, width 350ms ease-in-out;
+}
+
+.menu-barre-3:hover .check-circle {
+    color: white;
+    font-size: 25px;
+    transition: transform 750ms;
+}
+
+.menu-barre-3:hover .check-circle {
+    animation: fadein 1s;
+    transform: rotate(360deg);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-barre-3:hover {
+    border-right: 60px solid #99E1D1;
+    width: 340px;
+}
+
+.commande-bouton {
+    border-radius: 40px;
+    padding: 16px 50px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 100px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 15px;
+    border-style: none;
+    background: linear-gradient(0.48turn, #E972DA, #A15ADC);
+    box-shadow: 0px 5px 10px rgb(168, 168, 168);
+}
+
+.commande-bouton:hover {
+    background: linear-gradient(0.48turn, #ee78de, #b370eb);
+    box-shadow: 0px 6px 10px rgb(150, 150, 150);
+}
+
+.div-footer-background {
+    background-color: #353535;
+    padding: 20px 20px 40px 20px;
+}
+
+.footer-title h4 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.footer-text p {
+    color: white;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon-ustensils {
+    display: flex;
+    height: 35px;
+}
+
+.icon-hands-helping {
+    display: flex;
+    height: 35px;
+}
+
+.fa-utensils {
+    color: white;
+    margin-top: 8px;
+    margin-right: 15px;
+}
+
+.fa-hands-helping {
+    color: white;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.contact a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-contact, a {
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.mentions-legales a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-mentions-legales, a {
+    text-decoration: none;
+}
+
+.devenir-partenaire a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-devenir-partenaire, a {
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.proposer-un-restaurant a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.a-proposer-un-restaurant, a {
+    text-decoration: none;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: #F6F6F6;
+    }
+
+    .nav {
+        display: flex;
+        height: 70px;
+        width: 100%;
+        background-color: #FFFFFF;
+        position: relative;
+        align-items: center;
+    }
+
+    .nav>.nav-title>h1 {
+        display: flex;
+        font-size: 32px;
+        color: black;
+        font-family: 'Shrikhand', cursive;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .nav-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    i.fas.fa-arrow-left {
+        font-size: 23px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+    .img-restaurant {
+        width: 100%;
+    }
+
+    .restaurant {
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .la-palette-du-gout {
+        display: flex;
+        align-items: center;
+        border-radius: 40px;
+        margin-top: -40px;
+        position: relative;
+        background-color: #F6F6F6;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .title {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        font-family: 'Shrikhand', cursive;
+    }
+
+    .icon-heart .fas {
+        color: #636363;
+        font-size: 25px;
+        margin-right: 30px;
+        font-weight: 400;
+    }
+
+    .section-menu-flex {
+        display: block;
+    }
+
+    .section-menu {
+        font-family: 'Roboto', sans-serif;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .menu-entree h3 {
+        font-weight: lighter;
+        height: 15px;
+    }
+
+    .menu-entree {
+        margin-bottom: 30px;
+    }
+
+    .menu-plats h3 {
+        font-weight: lighter;
+        height: 15px;
+    }
+
+    .menu-plats {
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .menu-desserts h3 {
+        font-weight: lighter;
+        height: 15px;
+    }
+
+    .menu-desserts {
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    hr.line {
+        border: 1.5px solid #99E1D1;
+        width: 40px;
+    }
+
+    .line {
+        margin-right: 100%;
+    }
+
+    .hr {
+        height: 5px;
+    }
+
+    .menu-sous-titre {
+        height: 10px;
+        font-weight: bolder;
+    }
+
+    .menu-texte {
+        position: relative;
+        font-weight: lighter;
+    }
+
+    .menu-prix {
+        font-weight: bolder;
+    }
+
+    .menu-flex {
+        display: flex;
+        justify-content: space-between;
+        line-height: 10px;
+    }
+
+    .menu-barre-1 {
+        position: relative;
+        padding-top: 1px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        height: 70px;
+        width: auto;
+        background-color: white;
+        box-shadow: 0px 5px 10px rgb(219, 219, 219);
+    }
+
+    .menu-barre-1:hover {
+        width: auto;
+    }
+
+    .menu-barre-2 {
+        width: auto;
+    }
+
+    .menu-barre-2:hover {
+        width: auto;
+    }
+
+    .menu-barre-3 {
+        width: auto;
+    }
+
+    .menu-barre-3:hover {
+        width: auto;
+    }
+
+    .commande-bouton button {
+        border-radius: 40px;
+        padding: 16px 50px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        font-size: 15px;
+        border-style: none;
+        background: linear-gradient(0.48turn, #E972DA, #A15ADC);
+        box-shadow: 0px 5px 10px rgb(168, 168, 168);
+    }
+
+    .commande-bouton button:hover {
+        background: linear-gradient(0.48turn, #ee78de, #b370eb);
+        box-shadow: 0px 6px 10px rgb(150, 150, 150);
+    }
+
+    .commande-bouton {
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-footer-background {
+        background-color: #353535;
+        padding: 20px;
+    }
+
+    .footer-title h4 {
+        color: white;
+        font-size: 18px;
+        font-family: 'Shrikhand', cursive;
+    }
+
+    .footer-text p {
+        color: white;
+        line-height: 1;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .icon-ustensils {
+        display: flex;
+        height: 35px;
+    }
+
+    .icon-hands-helping {
+        display: flex;
+        height: 35px;
+    }
+
+    .fa-utensils {
+        color: white;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+    .fa-hands-helping {
+        color: white;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
+}
